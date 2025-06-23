@@ -2,7 +2,7 @@
     `define __risc_instruction_data__
 
 
-`include "risc_instruction_constants.sv"
+`include "../src/risc_instruction_constants.sv"
 `include "uvm_macros.svh" // Required for UVM macros
 `include "uvm_pkg.sv"
 import uvm_pkg::*;        // Imports all UVM

@@ -1,7 +1,7 @@
 `ifndef __risc_seq_item_instruction_r__
     `define __risc_seq_item_instruction_r__
 
-`include "risc_instruction_constants.sv"
+`include "../src/risc_instruction_constants.sv"
 `include "risc_test_constants.sv"
 
 `include "risc_seq_item_instruction.sv"

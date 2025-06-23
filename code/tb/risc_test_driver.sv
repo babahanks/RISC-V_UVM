@@ -4,7 +4,7 @@
 `include "risc_test_constants.sv"
 `include "risc_seq_item_instruction.sv"
 
-`include "memory_if.sv"
+`include "../src/memory_if.sv"
 `include "uvm_macros.svh" // Required for UVM macros
 `include "uvm_pkg.sv"
 import uvm_pkg::*;        // Imports all UVM

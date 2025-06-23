@@ -2,10 +2,10 @@
 `ifndef __risc_r_inst_seq_item__
   `define __risc_r_inst_seq_item__
 
-`include "ALU.sv"
+`include "../src/ALU.sv"
 
 `include "risc_inst_seq_item.sv"
-`include "risc_instruction_constants.sv"
+`include "../src/risc_instruction_constants.sv"
 `include "uvm_macros.svh" // Required for UVM macros
 `include "uvm_pkg.sv"
 import uvm_pkg::*;        // Imports all UVM

@@ -1,6 +1,6 @@
 `include "risc_v_circuit.sv"
-`include "memory_if.sv"
-`include "reg_file_if.sv"
+`include "../src/memory_if.sv"
+`include "../src/reg_file_if.sv"
 
 module risc_v_circuit_tb();
   

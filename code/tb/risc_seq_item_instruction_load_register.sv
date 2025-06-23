@@ -1,7 +1,7 @@
 `ifndef __risc_seq_item_instruction_load_register__
     `define __risc_seq_item_instruction_load_register__
 
-`include "risc_instruction_constants.sv"
+`include "../src/risc_instruction_constants.sv"
 `include "risc_seq_item_instruction.sv"
 `include "uvm_macros.svh" // Required for UVM macros
 `include "uvm_pkg.sv"
