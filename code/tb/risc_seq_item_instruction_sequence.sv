@@ -1,6 +1,6 @@
 `ifndef __risc_seq_item_instruction_sequence__
     `define __risc_seq_item_instruction_sequence__
-`include "../src/risc_instruction_constants.sv"
+`include "../rtl/risc_instruction_constants.sv"
 `include "risc_test_constants.sv"
 `include "risc_seq_item_instruction.sv"
 `include "risc_seq_item_instruction_r.sv"
@@ -55,14 +55,14 @@ class risc_seq_item_instruction_sequence extends uvm_sequence#(risc_seq_item_ins
     end
     
     for (int i=32; i<= end_address; i++) begin
-      //random_instruction = $urandom_range(1,0);
+      random_instruction = $urandom_range(1,0);
       random_instruction = $urandom_range(0);
       `uvm_info("risc_seq_item_instruction_sequence", $sformatf("random_instruction: %0d", random_instruction), UVM_MEDIUM);               
           
       case (random_instruction)
-        //0: inst = risc_seq_item_instruction_r::type_id::create("risc_seq_item_instruction_r");
-        //1: inst = risc_seq_item_instruction_b::type_id::create("risc_seq_item_instruction_b");
-        //default: `uvm_fatal("SEQ_ERR", $sformatf("Invalid instruction type: %0d", random_instruction))
+        0: inst = risc_seq_item_instruction_r::type_id::create("risc_seq_item_instruction_r");
+        1: inst = risc_seq_item_instruction_b::type_id::create("risc_seq_item_instruction_b");
+        default: `uvm_fatal("SEQ_ERR", $sformatf("Invalid instruction type: %0d", random_instruction))
       endcase
             
       inst.set_parameters(i);      

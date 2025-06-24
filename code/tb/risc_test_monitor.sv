@@ -11,8 +11,8 @@
 `include "risc_txn_memory_write.sv"
 `include "risc_txn_reg_file_write.sv"
 `include "risc_txns_in_instruction_cycle.sv"
-`include "../src/memory_if.sv"
-`include "../src/reg_file_if.sv"
+`include "../rtl/memory_if.sv"
+`include "../rtl/reg_file_if.sv"
 `include "uvm_macros.svh"
 `include "uvm_pkg.sv"
 import uvm_pkg::*;

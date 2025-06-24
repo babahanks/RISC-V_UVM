@@ -2,7 +2,7 @@
 `ifndef __risc_seq_item_instruction_i__
     `define __risc_seq_item_instruction_i__
 
-`include "../src/risc_test_constants.sv"
+`include "../rtl/risc_test_constants.sv"
 `include "risc_instruction_constants.sv"
 `include "risc_seq_item_instruction.sv"
 `include "uvm_macros.svh" // Required for UVM macros

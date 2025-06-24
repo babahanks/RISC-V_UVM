@@ -1,6 +1,6 @@
 `ifndef __risc_instruction_simulator__
  `define __risc_instruction_simulator__
-`include "../src/ALU.sv"
+`include "../rtl/ALU.sv"
 `include "risc_v_circuit_state.sv"
 `include "uvm_macros.svh"
 `include "uvm_pkg.sv"

@@ -4,7 +4,7 @@
 `include "risc_test_constants.sv"
 `include "risc_seq_item_instruction.sv"
 
-`include "../src/memory_if.sv"
+`include "../rtl/memory_if.sv"
 `include "uvm_macros.svh" // Required for UVM macros
 `include "uvm_pkg.sv"
 import uvm_pkg::*;        // Imports all UVM
@@ -50,7 +50,6 @@ class risc_test_driver extends uvm_driver#(risc_seq_item_instruction);
   
   
   task run_phase(uvm_phase phase);
-    i
     risc_seq_item_instruction txn;    
     
     @(posedge memory_if_i.reset)

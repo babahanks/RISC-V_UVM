@@ -2,8 +2,8 @@
  `define __risc_instruction_simulator_r__
 
 `include "risc_instruction_simulator.sv"
-`include "../src/ALU.sv"
-`include "../src/risc_instruction_constants.sv"
+`include "../rtl/ALU.sv"
+`include "../rtl/risc_instruction_constants.sv"
 `include "risc_v_circuit_state.sv"
 `include "uvm_macros.svh"
 `include "uvm_pkg.sv"
